@@ -18,7 +18,7 @@
 </head>
 <body>
     <header>
-        <div class="data-modal is-hidden" data-modal>
+        <div class="data-modal" data-modal>
             <div class="modal">
                 <button class="popup-button" data-modal-close>
                     <div>
@@ -26,6 +26,51 @@
                         <span></span>
                     </div>
                 </button>
+                <h3>Zostaw swoje dane w formularzu poniżej</h3>
+                <form>
+                    <label>
+                        Imie
+                        <div>
+                            <input type="text" name="imie">
+                            <span class="input--icon">
+                                <svg width="12" height="12">
+                                    <use href="/images/icons.svg#icon-input-name"></use>
+                                </svg>
+                            </span>
+                        </div>
+                    </label>
+                    <label>
+                        Telefon
+                        <div>
+                            <input type="tel" name="phone_number">
+                            <span class="input--icon">
+                                <svg height="13" width="13">
+                                    <use href="/images/icons.svg#icon-input-phone"></use>
+                                </svg>
+                            </span>                            
+                        </div>
+                    </label>
+                    <label>
+                        Email
+                        <div>
+                            <input type="email" name="email">
+                            <span class="input--icon">
+                                <svg width="15" height="12">
+                                    <use href="/images/icons.svg#icon-input-mail"></use>
+                                </svg>
+                            </span>
+                        </div>
+                    </label>
+                    <label>
+                        Komentarz
+                        <textarea name="text" cols="30" rows="5" placeholder="Wprowadź tekst"></textarea>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checkbox">
+                        Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a>
+                    </label>
+                    <button type="submit">Wyślij</button>
+                </form>
             </div>
         </div>
         <div class="navbar-wrapper">
