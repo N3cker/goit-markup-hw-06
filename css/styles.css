@@ -702,12 +702,108 @@ footer .media-icons-list svg {
   outline-color: var(--color-blue);
 }
 
-.modal form label input:focus ~ .modal form label svg {
+.modal form label div input:focus + .input--icon svg {
   fill: var(--color-blue);
 }
 
 .modal form label textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
+}
+
+/* .modal .checkbox-container {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  
+} */
+
+/* .modal .checkbox-container input {
+  border: none;
+  background: var(--color-blue);
+} */
+
+/* .modal .checkbox-container input[type=checkbox] {
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+
+.modal .checkbox-container svg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  display: block;
+  fill: var(--color-white);
+  background-color: #2196F3;
+  border: 2px solid var(--color-black);
+  border-radius: 3px;
+}
+
+.modal .checkbox-container svg path {
+  fill: red;
+  width: 15px;
+  height: 15px;
+} */
+
+.modal form .checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 20px 10px 20px 15px;
+}
+
+.modal form .checkbox-wrapper > div {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  margin-right: 10px;
+}
+
+.modal form .checkbox-wrapper input[type=checkbox]{
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal form .checkbox-wrapper input[type=checkbox]:checked + div{
+  background-color: var(--color-blue);
+  border: none;
+}
+
+.modal form .checkbox-wrapper input[type=checkbox]:checked + div svg{
+  display: block;
+}
+
+.modal form .checkbox-wrapper > div > div{
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.modal form .checkbox-wrapper svg{
+  display: none;
+  fill: white;
+}
+
+.modal form .checkbox-wrapper p {
+  font-size: 14px;
 }
 
 /* Portfolio page */

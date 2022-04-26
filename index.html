@@ -18,7 +18,7 @@
 </head>
 <body>
     <header>
-        <div class="data-modal" data-modal>
+        <div class="data-modal is-hidden" data-modal>
             <div class="modal">
                 <button class="popup-button" data-modal-close>
                     <div>
@@ -65,10 +65,20 @@
                         Komentarz
                         <textarea name="text" cols="30" rows="5" placeholder="Wprowadź tekst"></textarea>
                     </label>
-                    <label>
-                        <input type="checkbox" name="checkbox">
-                        Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a>
+
+                    <label class="checkbox-wrapper">
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <div>
+                                <svg width="11" height="8">
+                                    <use href="/images/icons.svg#icon-checkbox"></use>
+                                </svg>
+                            </div>    
+                        </div>
+                        <p>Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a></p> 
                     </label>
+
+
                     <button type="submit">Wyślij</button>
                 </form>
             </div>
