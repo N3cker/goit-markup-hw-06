@@ -381,10 +381,16 @@ header .navbar ul li:hover svg {
   margin: 0 5px;
   cursor: pointer;
   box-shadow: none;
+  transition: background-color .25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-team .media-icons-list li:hover {
   background-color: var(--color-blue);
+}
+
+.our-team .media-icons-list svg {
+  fill: var(--color-grey-icons);
+  transition: fill .25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-team .media-icons-list li:hover svg {
@@ -395,9 +401,6 @@ header .navbar ul li:hover svg {
   margin: 0;
 }
 
-.our-team .media-icons-list svg {
-  fill: var(--color-grey-icons);
-}
 
 /* Our Clients */
 .our-clients h2 {
@@ -493,6 +496,7 @@ footer .address-footer li:first-child {
   height: 44px;
   margin-right: 10px;
   overflow: hidden;
+  transition: background-color .25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .media-icons-list li:hover {
@@ -709,49 +713,6 @@ footer .media-icons-list svg {
 .modal form label textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
-/* .modal .checkbox-container {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  
-} */
-
-/* .modal .checkbox-container input {
-  border: none;
-  background: var(--color-blue);
-} */
-
-/* .modal .checkbox-container input[type=checkbox] {
-  width: 100%;
-  height: 100%;
-  display: block;
-  opacity: 0;
-  cursor: pointer;
-}
-
-
-
-.modal .checkbox-container svg {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  display: block;
-  fill: var(--color-white);
-  background-color: #2196F3;
-  border: 2px solid var(--color-black);
-  border-radius: 3px;
-}
-
-.modal .checkbox-container svg path {
-  fill: red;
-  width: 15px;
-  height: 15px;
-} */
 
 .modal form .checkbox-wrapper {
   display: flex;
