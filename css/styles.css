@@ -646,19 +646,31 @@ footer .media-icons-list svg {
 .modal form input {
   height: 40px;
   width: 100%;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: none;
+  outline: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px;
   padding-left: 42px;
+  transition: outline .25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal form label input:focus {
+  outline: 2px solid var(--color-blue);
 }
 
 .modal form textarea {
   width: 100%;
   height: 120px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: none;
+  outline: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
   padding: 12px;
+  transition: outline .25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal form label textarea:focus {
+  outline: 2px solid var(--color-blue);
 }
 
 .modal h3 {
@@ -710,12 +722,8 @@ footer .media-icons-list svg {
     height: 12px;
 }
 
-.modal form label input:focus {
-  outline-color: var(--color-blue);
-}
-
-.modal form label textarea:focus {
-  outline-color: var(--color-blue);
+.modal form label div .input--icon svg {
+  transition: fill .25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal form label div input:focus + .input--icon svg {
